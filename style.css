@@ -1,0 +1,112 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ce4e67;
+}
+
+
+header {
+    background-color: #d6829d;
+    color: #909069;
+    padding: 30px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 100px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0a0b16;
+    font-weight: bold;
+}
+
+.animated-text{
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+  }
+.index-content {
+ 
+    max-width: 500px;
+    margin: 0 auto;
+}
+.index-content img {
+    max-width: 40%;
+    border-radius: 60%;
+    margin-bottom: 40px;
+    
+}
+  
+.animated-text h1{
+    color: #10120f;
+    font-size: 5em;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 3px;
+  }
+  
+.animated-text h1:nth-child(1){
+    animation: text-move 20s infinite;
+  }  
+/* Style the sections */
+.section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 2;
+}
+
+/* Style the footer */
+footer {
+    background-color: #b6474f;
+    color: #27284a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+}
